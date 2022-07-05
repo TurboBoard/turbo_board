@@ -40,7 +40,7 @@ const Footer = () => (
 
 			<ul className="sm:flex space-y-2.5 sm:space-y-0 sm:space-x-5">
 				{[
-					{ slug: "about", text: "About" },
+					// { slug: "about", text: "About" },
 					{
 						slug: "privacy",
 						text: "Privacy Policy",
