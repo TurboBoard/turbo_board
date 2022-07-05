@@ -1,0 +1,111 @@
+@layer components {
+	.divider-left-up {
+		clip-path: polygon(100% 0, 0 0, 100% 100%);
+	}
+
+	.divider-left-down {
+		clip-path: polygon(0 0, 0 100%, 100% 100%);
+	}
+
+	.divider-right-down {
+		clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+	}
+
+	.divider-right-up {
+		clip-path: polygon(0 0, 0% 100%, 100% 0);
+	}
+
+	.header-link {
+		@apply block;
+		@apply relative;
+
+		@apply overflow-hidden;
+
+		@apply text-sm;
+		@apply md:text-base;
+		@apply text-white;
+
+		@apply tracking-wide;
+	}
+
+	.header-link__top {
+		@apply absolute;
+		@apply inset-0;
+
+		@apply transform;
+	}
+
+	.header-link__bottom {
+		@apply block;
+
+		@apply font-medium;
+
+		@apply transform;
+		@apply translate-y-full;
+	}
+
+	.header-link:focus .header-link__top,
+	.header-link:hover .header-link__top {
+		@apply -translate-y-full;
+
+		filter: blur(2.5px);
+	}
+
+	.header-link:focus .header-link__bottom,
+	.header-link:hover .header-link__bottom {
+		@apply translate-y-0;
+
+		filter: blur(0);
+	}
+
+	.header-link__top,
+	.header-link__bottom {
+		@apply in-out-smooth;
+	}
+
+	.header-link__bottom {
+		filter: blur(2.5px);
+	}
+
+	.blink {
+		animation: blink 10s cubic-bezier(0, 0, 0.5, 1) infinite;
+	}
+
+	@keyframes blink {
+		0%,
+		10% {
+			opacity: 1;
+		}
+
+		5% {
+			opacity: 0.75;
+		}
+	}
+
+	.page {
+		@apply container;
+
+		@apply py-5;
+		@apply lg:py-10;
+	}
+
+	.page h1,
+	.page h2,
+	.page h3 {
+		@apply text-accent;
+	}
+
+	.page ul,
+	.page ol {
+		@apply list-disc;
+		@apply list-inside;
+	}
+
+	.page li {
+		@apply mb-2.5;
+	}
+
+	.user-image:hover .user-image__icon {
+		@apply opacity-100;
+	}
+}

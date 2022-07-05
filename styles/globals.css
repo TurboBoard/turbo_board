@@ -1,16 +1,10 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import "tailwindcss/base";
+@import "./custom/base.css";
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import "tailwindcss/components";
+@import "custom/components.css";
 
-* {
-  box-sizing: border-box;
-}
+@import "tailwindcss/utilities";
+@import "./custom/utilities.css";
+
+@import "./custom/react-select.css";

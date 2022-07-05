@@ -1,0 +1,109 @@
+.react-select .react-select__control {
+	@apply pl-2.5;
+	@apply pr-0.5;
+
+	@apply bg-body;
+	@apply text-copy;
+
+	@apply border-primary;
+	@apply rounded-md;
+
+	@apply cursor-pointer;
+
+	@apply text-sm;
+	@apply capitalize;
+}
+
+.react-select .react-select__control:hover {
+	@apply border-primary;
+}
+
+.react-select .react-select__control--is-focused {
+	box-shadow: none;
+}
+
+.react-select .react-select__control--is-disabled {
+	@apply bg-neutral-100;
+	@apply text-neutral-600;
+
+	@apply dark:bg-neutral-800;
+	@apply dark:text-neutral-300;
+
+	@apply pointer-events-auto;
+	@apply cursor-not-allowed;
+}
+
+.react-select .react-select__menu {
+	@apply bg-body;
+
+	@apply m-0;
+	@apply p-0 !important;
+
+	@apply border;
+	@apply border-primary;
+	@apply rounded-md;
+
+	@apply overflow-hidden;
+
+	@apply shadow-xl;
+}
+
+.react-select .react-select__menu-list {
+	@apply p-0;
+
+	@apply custom-scrollbar;
+}
+
+.react-select .react-select__option {
+	@apply even:bg-neutral-200;
+	@apply dark:even:bg-neutral-800;
+
+	@apply text-sm;
+	@apply capitalize;
+
+	@apply cursor-pointer;
+}
+
+.react-select .react-select__option--is-focused,
+.react-select .react-select__option:hover {
+	@apply bg-secondary !important;
+	@apply dark:even:bg-secondary !important;
+
+	@apply text-light;
+}
+
+.react-select .react-select__option--is-selected {
+	@apply bg-accent !important;
+}
+
+.react-select .react-select__input-container {
+	@apply m-0;
+	@apply p-0;
+
+	@apply text-copy;
+}
+
+.react-select .react-select__value-container {
+	@apply m-0;
+	@apply p-0;
+}
+
+.react-select .react-select__placeholder {
+	@apply text-neutral-500;
+}
+
+.react-select .react-select__single-value {
+	@apply text-copy;
+}
+
+.react-select .react-select__indicator {
+	@apply text-primary;
+}
+
+.react-select .react-select__indicator-separator {
+	@apply bg-primary;
+}
+
+.react-select .react-select__indicator:hover {
+	@apply text-secondary;
+}

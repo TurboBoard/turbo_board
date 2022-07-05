@@ -1,0 +1,189 @@
+@layer utilities {
+	.bg-primary {
+		background-color: var(--primary);
+	}
+
+	.bg-secondary {
+		background-color: var(--secondary);
+	}
+
+	.bg-body {
+		background-color: var(--body);
+	}
+
+	.bg-accent {
+		background-color: var(--accent);
+	}
+
+	.bg-copy {
+		background-color: var(--copy);
+	}
+
+	.text-primary {
+		color: var(--primary);
+	}
+
+	.text-secondary {
+		color: var(--secondary);
+	}
+
+	.text-body {
+		color: var(--body);
+	}
+
+	.text-accent {
+		color: var(--accent);
+	}
+
+	.text-copy {
+		color: var(--copy);
+	}
+
+	.border-primary {
+		border-color: var(--primary);
+	}
+
+	.border-secondary {
+		border-color: var(--secondary);
+	}
+
+	.border-body {
+		border-color: var(--body);
+	}
+
+	.border-accent {
+		border-color: var(--accent);
+	}
+
+	.border-copy {
+		border-color: var(--copy);
+	}
+
+	.outline-accent {
+		outline-color: var(--accent);
+	}
+
+	.cubic {
+		transition-timing-function: cubic-bezier(0, 0, 0.5, 1);
+	}
+
+	.in-out-smooth {
+		transition-property: all;
+		transition-duration: 0.25s;
+		transition-delay: 0s;
+
+		@apply cubic;
+	}
+
+	.button {
+		@apply px-5;
+		@apply py-3;
+
+		@apply rounded-md;
+
+		@apply text-light;
+
+		@apply text-sm;
+		@apply tracking-wider;
+	}
+
+	.button:hover,
+	.button:focus {
+		@apply bg-secondary;
+
+		@apply text-light;
+	}
+
+	.button:disabled,
+	.button:disabled:hover {
+		@apply bg-neutral-500;
+
+		@apply cursor-not-allowed;
+
+		@apply opacity-50;
+	}
+
+	.button--outline {
+		@apply border;
+		@apply border-primary;
+
+		@apply hover:border-secondary;
+		@apply focus:border-secondary;
+	}
+
+	.button--full {
+		@apply w-full;
+
+		@apply inline-block;
+
+		@apply bg-primary;
+
+		@apply text-center;
+
+		@apply font-bold;
+
+		@apply uppercase;
+
+		@apply shadow-md;
+	}
+
+	.input {
+		@apply w-full;
+		@apply px-2.5;
+		@apply py-1;
+
+		@apply border;
+		@apply border-primary;
+		@apply rounded-md;
+		@apply outline-0;
+
+		@apply bg-light;
+		@apply dark:bg-dark;
+
+		@apply in-out-smooth;
+	}
+
+	.input:focus {
+		@apply border-secondary;
+	}
+
+	.input:invalid,
+	.input:focus:invalid {
+		@apply border-warning;
+	}
+
+	.input:disabled {
+		@apply bg-neutral-100;
+		@apply text-neutral-600;
+
+		@apply dark:bg-neutral-800;
+		@apply dark:text-neutral-300;
+
+		@apply cursor-not-allowed;
+	}
+
+	.heading {
+		@apply font-racing;
+
+		@apply tracking-wider;
+	}
+
+	.custom-scrollbar::-webkit-scrollbar {
+		@apply h-2;
+		@apply w-2;
+
+		@apply rounded-md;
+	}
+
+	.custom-scrollbar::-webkit-scrollbar-track {
+		@apply rounded-md;
+
+		@apply bg-neutral-100;
+	}
+
+	.custom-scrollbar::-webkit-scrollbar-thumb {
+		@apply rounded-md;
+
+		@apply bg-accent;
+	}
+}

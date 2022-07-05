@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
+
+@layer base {
+	body.light {
+		--primary: theme("colors.teal");
+		--secondary: theme("colors.byzantium");
+		--accent: theme("colors.pink");
+		--body: theme("colors.light");
+		--copy: theme("colors.dark");
+	}
+
+	body.dark {
+		--primary: theme("colors.pink");
+		--secondary: theme("colors.byzantium");
+		--accent: theme("colors.teal");
+		--body: theme("colors.dark");
+		--copy: theme("colors.light");
+	}
+
+	body {
+		min-width: 20rem;
+
+		@apply bg-body;
+		@apply text-copy;
+
+		@apply custom-scrollbar;
+	}
+
+	::selection {
+		@apply bg-accent;
+
+		@apply text-light;
+	}
+
+	a,
+	button {
+		@apply in-out-smooth;
+	}
+
+	a:focus,
+	button:focus {
+		@apply outline-0;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		@apply heading;
+	}
+
+	h1 {
+		@apply text-5xl;
+
+		@apply mb-5;
+	}
+
+	h2 {
+		@apply text-4xl;
+
+		@apply mb-2.5;
+	}
+
+	h3 {
+		@apply text-2xl;
+
+		@apply mb-2.5;
+	}
+
+	h4 {
+		@apply text-xl;
+
+		@apply mb-1.5;
+	}
+
+	p {
+		@apply mb-5;
+
+		@apply text-copy;
+
+		@apply leading-6;
+	}
+
+	p a {
+		@apply text-primary;
+
+		@apply hover:text-secondary;
+		@apply focus:text-secondary;
+	}
+
+	li {
+		@apply leading-5;
+	}
+
+	fieldset {
+		@apply relative;
+
+		@apply sm:mb-5;
+		@apply mb-10;
+		@apply px-5;
+		@apply pb-5;
+
+		@apply border;
+		@apply border-primary;
+
+		@apply rounded-lg;
+		@apply shadow-md;
+	}
+
+	legend {
+		@apply heading;
+
+		@apply mb-2.5;
+
+		@apply text-accent;
+		@apply text-2xl;
+	}
+}
