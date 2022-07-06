@@ -4,7 +4,7 @@ import Footer from "@Components/Footer";
 import Header from "@Components/Header";
 
 const Layout = ({ children }: any) => {
-	let title = "Turbo Board";
+	let title = "Turbo Board | Video Game Bounty Board";
 
 	if (children?.props?.page_title) {
 		title += ` | ${children?.props?.page_title}`;
@@ -18,14 +18,14 @@ const Layout = ({ children }: any) => {
 				{/* Facebook */}
 				<meta property="og:type" content="website" />
 				<meta property="og:title" content={title} />
-				<meta property="og:description" content="Create, share and fund game bounties." />
+				<meta property="og:description" content="Create, share and fund video game bounties: Speedrun, High Score, Trick or Tool." />
 				<meta property="og:image" content="https://turboboard.io/meta.jpg" />
 
 				{/* Twitter */}
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:site" content="@TurboBoardIO" />
 				<meta name="twitter:title" content="Turbo Board - Video Game Bounties" />
-				<meta name="twitter:description" content="Create, share and fund game bounties." />
+				<meta name="twitter:description" content="Create, share and fund video game bounties: Speedrun, High Score, Trick or Tool." />
 				<meta name="twitter:image" content="https://turboboard.io/meta.jpg" />
 
 				{/* Icons */}
