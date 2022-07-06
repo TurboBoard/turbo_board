@@ -17,3 +17,7 @@
 **Version 0.0.1**
 - MVP
 
+**Version 0.0.2**
+- Added Page Titles
+- Added META tags to head
+- Added custom domain to Auth0 Login

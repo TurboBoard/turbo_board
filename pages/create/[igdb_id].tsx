@@ -21,6 +21,7 @@ export async function getStaticProps({ params }: { params: { igdb_id: number } }
 	return {
 		props: {
 			game,
+			page_title: `Create ${game.name} Bounty`,
 		},
 		revalidate: 1,
 	};

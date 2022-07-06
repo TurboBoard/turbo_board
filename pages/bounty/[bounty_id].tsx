@@ -32,6 +32,7 @@ export async function getStaticProps({ params }: { params: { bounty_id: string }
 		return {
 			props: {
 				...item,
+				page_title: `${game.name} Bounty`,
 			},
 			revalidate: 1,
 		};
